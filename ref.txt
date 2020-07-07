@@ -3,6 +3,33 @@
 How do I add a library path in cmake?
 https://stackoverflow.com/questions/28597351/how-do-i-add-a-library-path-in-cmake
 
+
+1. The simplest way of doing this would be to add
+
+include_directories(${CMAKE_SOURCE_DIR}/inc)
+link_directories(${CMAKE_SOURCE_DIR}/lib)
+
+add_executable(foo ${FOO_SRCS})
+target_link_libraries(foo bar) # libbar.so is found in ${CMAKE_SOURCE_DIR}/lib
+
+
+2. The modern CMake version that doesn't add the -I and -L flags to every compiler invocation would be to use imported libraries:
+
+add_library(bar SHARED IMPORTED) # or STATIC instead of SHARED
+set_target_properties(bar PROPERTIES
+    IMPORTED_LOCATION "${CMAKE_SOURCE_DIR}/lib/libbar.so"
+    INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_SOURCE_DIR}/include/libbar"
+)
+
+set(FOO_SRCS "foo.cpp")
+add_executable(foo ${FOO_SRCS})
+target_link_libraries(foo bar) # also adds the required include path
+
+If setting the INTERFACE_INCLUDE_DIRECTORIES doesn't add the path, older versions of CMake also allow you to use target_include_directories(bar PUBLIC /path/to/include). However, this no longer works with CMake 3.6 or newer.
+
+
+
+
 It's Time To Do CMake Right
 https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
 
