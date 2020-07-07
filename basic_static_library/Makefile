@@ -8,7 +8,7 @@ run: build
 	$(BUILD_DIR)/hello_binary
 
 build: $(BUILD_DIR)
-	cd $(BUILD_DIR) && make 
+	cd $(BUILD_DIR) && make VERBOSE=1 
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR) && cd $(BUILD_DIR) && cmake .. 
