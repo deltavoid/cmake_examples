@@ -5,7 +5,7 @@ BUILD_DIR := build_release
 
 
 run: build
-	$(BUILD_DIR)/hello_binary
+	$(BUILD_DIR)/main
 
 build: $(BUILD_DIR)
 	cd $(BUILD_DIR) && make VERBOSE=1 
