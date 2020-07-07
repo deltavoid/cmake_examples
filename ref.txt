@@ -1,0 +1,10 @@
+
+
+How do I add a library path in cmake?
+https://stackoverflow.com/questions/28597351/how-do-i-add-a-library-path-in-cmake
+
+It's Time To Do CMake Right
+https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
+
+CMake中使用pthread实践
+https://zhuanlan.zhihu.com/p/128519905
