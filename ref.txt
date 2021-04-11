@@ -35,3 +35,7 @@ https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
 
 CMake中使用pthread实践
 https://zhuanlan.zhihu.com/p/128519905
+
+
+带你看 CMake
+https://www.jianshu.com/p/9e8e0566ccc5
