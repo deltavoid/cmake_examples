@@ -2,6 +2,21 @@
 message("main CMakeLists begin")
 project(main)
 
+
+message("PROJECT_NAME: ${PROJECT_NAME}")
+message("PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
+message("PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
+
+
+
+
+
+
+
+
+
+# targets and directories
+
 # Create the executable
 add_executable(main 
     main.cpp
