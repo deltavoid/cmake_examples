@@ -1,5 +1,5 @@
 
-message("static_lib1 CMakeLists begin")
+message("static_lib2 CMakeLists begin")
 project (static_lib1)
 
 
@@ -18,8 +18,8 @@ message("PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 # targets and directories
 
 # Add a library with the above sources
-add_library(static_lib1 STATIC
-    sublib1.cpp
+add_library(static_lib2 STATIC
+    sublib2.cpp
 )
 #add_library(sub::lib1 ALIAS sublibrary1)
 
@@ -27,7 +27,7 @@ add_library(static_lib1 STATIC
 #    PUBLIC ${PROJECT_SOURCE_DIR}/include
 #)
 
-target_include_directories(static_lib1
+target_include_directories(static_lib2
     PUBLIC 
         ..
 )
@@ -35,4 +35,4 @@ target_include_directories(static_lib1
 
 
 
-message("static_lib1 CMakeLists end")
+message("static_lib2 CMakeLists end")

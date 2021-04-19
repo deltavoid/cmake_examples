@@ -34,7 +34,7 @@ message("CMAKE_TOOLCHAIN_FILE: ${CMAKE_TOOLCHAIN_FILE}")
 
 # targets and directories
 add_subdirectory(static_lib2)
-add_subdirectory(interface_lib2)
+# add_subdirectory(interface_lib2)
 add_subdirectory(main)
 
 
