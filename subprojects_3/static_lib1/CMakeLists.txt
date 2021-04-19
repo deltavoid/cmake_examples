@@ -19,7 +19,7 @@ message("PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 
 # Add a library with the above sources
 add_library(static_lib1 STATIC
-    src/sublib1.cpp
+    sublib1.cpp
 )
 #add_library(sub::lib1 ALIAS sublibrary1)
 
@@ -29,7 +29,7 @@ add_library(static_lib1 STATIC
 
 target_include_directories(static_lib1
     PUBLIC 
-        include
+        ..
 )
 
 

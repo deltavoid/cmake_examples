@@ -1,4 +1,4 @@
-#include "sublib1/sublib1.h"
+#include "static_lib1/sublib1.h"
 #include "sublib2/sublib2.h"
 
 int main(int argc, char *argv[])
