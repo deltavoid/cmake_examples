@@ -26,7 +26,7 @@ add_library(interface_lib1 INTERFACE)
 
 target_include_directories(interface_lib1
     INTERFACE
-        include
+        ..
 )
 
 
