@@ -27,6 +27,7 @@ message("CMAKE_TOOLCHAIN_FILE: ${CMAKE_TOOLCHAIN_FILE}")
 
 # dependencies
 
+find_package(static_lib1 REQUIRED)
 
 
 
