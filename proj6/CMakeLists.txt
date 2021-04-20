@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
-message("proj5 CMakeLists.txt begin")
+message("proj6 CMakeLists.txt begin")
 
-project(proj5)
+project(proj6)
 
 message("CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
 message("CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
@@ -43,4 +43,4 @@ add_subdirectory(main)
 
 
 
-message("proj5 CMakeLists.txt end")
+message("proj6 CMakeLists.txt end")
