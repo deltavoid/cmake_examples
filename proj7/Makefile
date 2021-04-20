@@ -22,4 +22,4 @@ clean:
 
 
 run: build
-	$(BUILD_DIR)/main hello world
+	$(BUILD_DIR)/main/main
