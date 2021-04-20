@@ -35,7 +35,7 @@ add_executable(main
 # This will cause the include directories for that target to be added to this project
 target_link_libraries(main
     static_lib2
-    StaticLib1::static_lib1
+    Proj5::static_lib1
 )
 
 

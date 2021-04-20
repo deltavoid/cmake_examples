@@ -5,7 +5,7 @@ BUILD_DIR ?= build
 default: build
 
 
-SEASTAR_DIR:=$(CURDIR)/../proj5
+PROJ5_DIR:=$(CURDIR)/../proj5
 
 
 build: $(BUILD_DIR)/Makefile
@@ -14,7 +14,7 @@ build: $(BUILD_DIR)/Makefile
 $(BUILD_DIR)/Makefile: Makefile
 	mkdir -p $(BUILD_DIR) \
 	&& cmake -S . -B $(BUILD_DIR) \
-	    -DCMAKE_PREFIX_PATH=$(SEASTAR_DIR)/build
+	    -DCMAKE_PREFIX_PATH=$(PROJ5_DIR)/build
 	    -DCMAKE_TOOLCHAIN_FILE=$(VCPKG_HOME)/scripts/buildsystems/vcpkg.cmake
 
 clean:	
