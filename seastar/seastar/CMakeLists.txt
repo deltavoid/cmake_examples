@@ -1,6 +1,6 @@
 
-message("static_lib1 CMakeLists begin")
-project (static_lib1)
+message("seastar CMakeLists begin")
+project (seastar)
 
 
 
@@ -26,7 +26,7 @@ message("PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 # targets and directories
 
 # Add a library with the above sources
-add_library(static_lib1 STATIC
+add_library(seastar STATIC
     src/sublib1.cpp
 )
 #add_library(sub::lib1 ALIAS sublibrary1)
@@ -35,7 +35,7 @@ add_library(static_lib1 STATIC
 #    PUBLIC ${PROJECT_SOURCE_DIR}/include
 #)
 
-target_include_directories(static_lib1
+target_include_directories(seastar
     PUBLIC 
         include
 )
@@ -43,4 +43,4 @@ target_include_directories(static_lib1
 
 
 
-message("static_lib1 CMakeLists end")
+message("seastar CMakeLists end")
