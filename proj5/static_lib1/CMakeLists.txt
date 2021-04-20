@@ -31,13 +31,12 @@ add_library(static_lib1 STATIC
 )
 #add_library(sub::lib1 ALIAS sublibrary1)
 
-#target_include_directories(sublibrary1
-#    PUBLIC ${PROJECT_SOURCE_DIR}/include
-#)
 
 target_include_directories(static_lib1
     PUBLIC 
-        include
+        # include
+        $<INSTALL_INTERFACE:include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
 

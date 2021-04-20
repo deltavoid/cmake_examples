@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.5)
-message("proj5 CMakeLists.txt begin")
+message("seastar CMakeLists.txt begin")
 
-project(proj5
+project(seastar
     VERSION 1.0
 )
 
@@ -170,4 +170,4 @@ include (CPack)
 
 
 
-message("proj5 CMakeLists.txt end")
+message("seastar CMakeLists.txt end")
