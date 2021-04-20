@@ -37,7 +37,9 @@ add_library(seastar STATIC
 
 target_include_directories(seastar
     PUBLIC 
-        include
+        # include
+        $<INSTALL_INTERFACE:include>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
 
