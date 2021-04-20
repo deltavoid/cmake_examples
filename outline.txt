@@ -1,0 +1,23 @@
+
+
+
+
+
+
+proj1 original sublib
+
+
+proj2 nested include
+
+
+proj3 flat include
+
+
+
+
+
+proj6 depends proj5
+
+
+proj7 depends seastar
+
